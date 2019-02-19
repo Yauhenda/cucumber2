@@ -55,9 +55,21 @@ To add file during step perfoming:
         this.scenario = scenario;
     }
 ```
-2. Call embed method in a step:
+2. Call embed() method in a step:
 ```java
 byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
         scenario.embed(screenshot, "image/png");
 ```
 
+To add text message during step perfoming:
+1. Setup scenario in @Before hook:
+```java
+@Before
+    public void beforeScenario(Scenario scenario) {
+        this.scenario = scenario;
+    }
+```
+2. Call write() method in a step:
+```java
+        scenario.write("Text message");
+```
