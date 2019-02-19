@@ -1,6 +1,6 @@
-# QASpaceReport for Cucumber3
+# QASpaceReport for Cucumber2
 
-QASpaceReport for Cucumber3 is a Java library for creating proper artifact for Jenkins plugin.
+QASpaceReport for Cucumber2 & 3 is a Java library for creating proper artifact for Jenkins plugin.
 
 ## Installation
 
